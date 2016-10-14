@@ -1,28 +1,72 @@
 <style>
 
-/********** Base styles **********/
-* {
-  box-sizing: border-box;
-  padding-bottom: 0px;
-  padding-top: 0px;
+body {
+  background-color: #ff0000;
+}
+
+/** HEADER **/
+
+#header-nav {
+  background-color: #ffff99;
+  border-radius: 0;
+  border: 0;
   
 }
 
-h1 {
+.navbar-brand h1 { /* Restaurant name */
+  
+  font-size: 1.5em;
+  color: black;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+}
+.navbar-brand a:hover, .navbar-brand a:focus, .navbar-brand a:link {
+  text-decoration: none; 
+}
+
+#nav-list {
+  margin-top: 0px;
+  background-color: #b30000;
+}
+#nav-list a {
+  color: #ffffff;
+  text-align: center;
+}
+#nav-list a:hover {
+  background: #ffffff;
+}
+#nav-list a span {
+  font-size: 1.8em;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #0000ff;
+}
+.navbar-header button.navbar-toggle {
+  float: right;
+  margin-top: 10px;
+}
+
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+
+h2 {
   margin-bottom: 15px;
   color: black;
   font-size: 250%;
   text-transform: uppercase;
 }
-.container div {
-	background-color: #ffffff;
-  margin-left: 0px;
-	
-}
-
-.row {
+.row div {
+  background-color: #ffff99;
   margin-bottom: 30px;
-
 }
 p { 
   margin-bottom: 15px;
@@ -33,7 +77,6 @@ p {
 #p1 {
   
   color: black;
-  padding: 40px;
   word-spacing: 2px;
   line-height: 20px;
 }
@@ -43,12 +86,7 @@ p {
   text-align: center;
   color: black;
   text-transform: uppercase;
-
-
-
 }
-body {
-    background-color: #ff0000;
-  }
+
 
 </style>
